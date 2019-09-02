@@ -1,8 +1,6 @@
 package java8NewFeature.demo4_Stream;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 import java.util.stream.Collectors;
 
 /**
@@ -87,6 +85,15 @@ public class Main {
                         .reduce((s1, s2) -> s1 + "#" + s2);
         reduced.ifPresent(System.out::println);
         System.out.println("=============================================");
+
+
+        // 多重分组 和多重排序
+        Map<Boolean, Map<Boolean, List<String>>> collect = stringList.stream()
+                .collect(Collectors.groupingBy(val -> val.startsWith("a"),
+                        Collectors.groupingBy(val -> val.startsWith("b"))));
+
+        stringList.sort(Comparator.comparing(String::length).
+                thenComparing(Comparator.comparing(String::length)));
 
 
     }
