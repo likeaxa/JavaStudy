@@ -1,4 +1,4 @@
-package DynamicPoxy;
+package DynamicPoxy.demo1;
 
 /**
  * @Classname StudentsImpl
