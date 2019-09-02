@@ -58,8 +58,10 @@ public class ClassPathXmlApplicationContext implements BeanFactory {
                 // 构造一个setter方法
                 String mothodName = "set" + propertyName.substring(0, 1).toUpperCase()
                         + propertyName.substring(1);
+                // 利用反射获取obj对象的setter方法 第二个参数是一个类入参
                 Method method = obj.getClass().getMethod(mothodName,
                         refObject.getClass().getInterfaces()[0]);
+
                 method.invoke(obj, refObject);
             }
         }
