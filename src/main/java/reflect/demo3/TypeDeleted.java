@@ -22,6 +22,7 @@ public class TypeDeleted {
     public static void main(String[] args) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
         List<Integer> testList = new ArrayList<>();
         testList.add(111);
+        // Objects是一个工具类 Object 才是所有的对象隐式继承的类
         Method add = testList.getClass().getDeclaredMethod("add", Object.class);
         add.invoke(testList,"sss");
         add.invoke(testList,false);
