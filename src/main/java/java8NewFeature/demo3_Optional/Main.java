@@ -1,4 +1,4 @@
-package java8NewFeature.demo3_Option;
+package java8NewFeature.demo3_Optional;
 
 import java.util.Optional;
 
