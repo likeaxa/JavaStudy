@@ -9,7 +9,7 @@
 1. 动态代理demo 实现
 2. 反射的各种基础 反射和注解的结合 反射绕过泛型产生泛型擦除
 3. spring的IOC 简单实现
-4. Java8 新特性（函数式接口、静态导入、Optional、Stream、Lambda）
+4. Java8 新特性（函数式接口、静态导入、Optional、Stream、Lambda、新时间类）
 5. java IO NIO Netty 简单实现 
 ## 应用
 1. 基于org.apache.poi 解析excel文件
