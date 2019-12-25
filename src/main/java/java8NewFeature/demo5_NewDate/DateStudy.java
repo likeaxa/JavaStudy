@@ -6,8 +6,7 @@ package java8NewFeature.demo5_NewDate;
  */
 
 import javax.xml.crypto.Data;
-import java.time.LocalDateTime;
-import java.time.Month;
+import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoField;
 import java.time.temporal.ChronoUnit;
@@ -72,5 +71,35 @@ public class DateStudy {
         System.out.println(mins2+"----"+mins3+"------"+mins4);
 
 
+    }
+
+
+    /**
+     * Date转换为LocalDateTime
+     * @param date
+     */
+    public void date2LocalDateTime(Date date){
+        //An instantaneous point on the time-line.(时间线上的一个瞬时点。)
+        Instant instant = date.toInstant();
+        //A time-zone ID, such as {@code Europe/Paris}.(时区)
+        ZoneId zoneId = ZoneId.systemDefault();
+        LocalDateTime localDateTime = instant.atZone(zoneId).toLocalDateTime();
+
+        System.out.println(localDateTime.toString());
+        System.out.println(localDateTime.toLocalDate() + " " +localDateTime.toLocalTime());
+
+        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        System.out.println(dateTimeFormatter.format(localDateTime));
+    }
+
+    /**
+     * LocalDateTime转换为Date
+     * @param localDateTime
+     */
+    public void localDateTime2Date( LocalDateTime localDateTime){
+        ZoneId zoneId = ZoneId.systemDefault();
+        ZonedDateTime zdt = localDateTime.atZone(zoneId);
+        Date date = Date.from(zdt.toInstant());
+        System.out.println(date.toString());
     }
 }
