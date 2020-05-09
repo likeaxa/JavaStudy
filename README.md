@@ -1,6 +1,6 @@
 # Introduction
 
-本项目用于学习java各种知识 只用于学习各种demo 不形成一个系统
+本项目用于学习java各种知识 只用于学习各种demo 
 
 # 目前已经有的功能
 
@@ -25,7 +25,7 @@
 7. 责任链模式传统实现&&java8实现
 ## 框架
 1. spring的IOC 简单实现
-2 spring 的事件机制 demo实现
+2. spring 的事件机制 demo实现
 ---
 
 # 正在开发写的功能
