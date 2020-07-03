@@ -1,6 +1,6 @@
 # Introduction
 
-本项目用于学习java各种知识 只用于学习各种demo 
+本项目用于学习java各种知识 记录下学习过程中的demo
 
 # 目前已经有的功能
 
@@ -9,7 +9,19 @@
 1. 动态代理demo 实现
 2. 反射的各种基础 反射和注解的结合 反射绕过泛型产生泛型擦除
 3. Java8 新特性（函数式接口、静态导入、Optional、Stream、Lambda、新时间类）
-4. java IO NIO Netty 简单实现 
+4. java IO NIO Netty 简单实现
+
+## java并发知识
+1. Lock 和 Condition 的使用 (划重点)
+2. Semaphore 的使用
+3. ReadWriteLock 的使用  (划重点)
+4. StampedLock 的使用
+5. CountDownLatch 和 CyclicBarrier 的使用
+6. 线程池的使用 (划重点)
+7. Future 和 FutureTask 的使用
+8. CompletableFuture 的使用   (划重点)
+9. CompletableService 的使用
+10. ForkJoin 的使用
 ## 应用
 1. 基于org.apache.poi 解析excel文件
 ## 数据结构和算法
