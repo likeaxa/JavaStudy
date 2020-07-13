@@ -78,7 +78,7 @@ public class impl2<K, V> {
             node.pre.next = node.next;
         }
         // node的后一个节点的pre引用指向node的前一个节点
-        if (node.next != null){
+        if (node.next != null){ 
             node.next.pre = node.pre;
         }
         // 情况3,node为尾节点
