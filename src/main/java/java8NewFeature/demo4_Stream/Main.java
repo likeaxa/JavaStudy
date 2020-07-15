@@ -10,6 +10,9 @@ import java.util.stream.Collectors;
  */
 public class Main {
     public static void main(String[] args) {
+
+
+
         List<String> stringList = new ArrayList<>();
         stringList.add("ddd2");
         stringList.add("aaa2");
@@ -19,6 +22,17 @@ public class Main {
         stringList.add("ccc");
         stringList.add("bbb2");
         stringList.add("ddd1");
+        // 使用flagMap对集合进行汇总
+        List<List<String>> test = new ArrayList<>();
+        test.add(stringList);
+        test.add(new ArrayList<String>() {{
+            add("ddd2");
+        }});
+        test.stream()
+                .flatMap(Collection::stream)
+                .distinct()
+                .forEach(System.out::println);
+        System.out.println("=============================================");
 
         // 使用Filter 进行过滤
         stringList
