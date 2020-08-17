@@ -2,6 +2,7 @@ package java8NewFeature.demo7_initialSkill;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 
 /**
